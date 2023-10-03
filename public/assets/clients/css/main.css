@@ -1,0 +1,13 @@
+@import 'reset.css';
+@import 'variable.css'; 
+@import 'header.css';
+@import 'body.css';
+@import 'footer.css';
+@import 'form.css';
+@import 'responsive.css';
+
+.no-select{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
