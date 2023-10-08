@@ -1,10 +1,10 @@
 <?php
 
 class AdminController extends BaseController{
+    protected $model;
+    protected $data = [];
     public function __construct()
     {
-        if(!isset($_SESSION['admin'])){
-            header('location: '._WEB.'/admin/Auth/login');
-        }
+        
     }
 }

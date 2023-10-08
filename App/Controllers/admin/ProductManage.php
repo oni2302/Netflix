@@ -2,8 +2,6 @@
 
 class ProductManage extends AdminController
 {
-    public $model;
-    public $data = [];
     public function __construct()
     {
         parent::__construct();
