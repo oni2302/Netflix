@@ -33,3 +33,6 @@
       $data = $request->getField();
     - Hàm getField() sẽ lấy data theo dạng array
       - Ví dụ $data['username']
+
+# ! Lưu ý, mọi người không code trên nhánh master.
+- Khi bắt đầu task của mình mọi người tự tạo một nhánh riêng cho mình, làm xong mọi người gửi Pull request mình sẽ kiểm tra rồi xác nhập vào nhánh Master.
