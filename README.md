@@ -1,6 +1,6 @@
 # [Netflix](https://github.com/oni2302/Netflix)
 
-- Đầu tiên là tất cả đường link nó sẽ vào index.php
+- Đầu tiên là tất cả đường link nó sẽ vào index.php.
   - index.php sẽ gọi boot.php
   - boot.php sẽ cài đặt những thứ cần thiết cho web trong đó có App.php
 
