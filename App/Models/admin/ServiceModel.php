@@ -30,4 +30,24 @@ class ServiceModel extends BaseModel{
             return false;
         return $result;
     }
+    //Thêm gói dịch vụ
+    public function addServicePackages($data)
+    {
+        extract($data);
+        $sql = "INSERT INTO service(id, name, price, createDate, maxResolution, haveAds, haveHistory)
+            VALUES ('$id', '$name', '$price', '$createDate', '$maxResolution', '$haveAds', '$haveHistory')";
+        $this->execute($sql);
+    }
+    //Sửa gói dịch vụ
+    public function editServicePackages($data){
+        extract($data);
+        $sql = "UPDATE service(id, name, price, createDate, maxResolution, haveAds, haveHistory)
+            VALUES ('$id', '$name', '$price', '$createDate', '$maxResolution', '$haveAds', '$haveHistory')";
+        $this->execute($sql);
+    }
+    //Xóa gói dịch vụ
+    public function deleteServicePackages($id){
+        $sql = "DELETE FROM service WHERE id=$id";
+        $this->execute($sql);
+    }
 }
