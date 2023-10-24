@@ -8,7 +8,7 @@
     $routes['fetch/(.+)/size'] = 'product/size/$1';
 
     //Service
-    $routes['danh-sach-voucher'] = 'admin/Service';
+    $routes['danh-sach-voucher'] = 'admin/service';
 
     //Tùy chỉnh đường link
     //Ví dụ $routes['duong_link'] = 'controller/action' => http://localhost/duong_link thì nó sẽ vào controller và action
