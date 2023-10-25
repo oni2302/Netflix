@@ -1,7 +1,7 @@
 <?php
 class Service extends AdminController
 {
-    public function service(){
+    public function __construct(){
         parent::__construct();
         $this->model = $this->getModel('admin/ServiceModel');
     }
