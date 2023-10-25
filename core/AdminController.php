@@ -7,7 +7,4 @@ class AdminController extends BaseController{
     {
         
     }
-    public function service(){
-        
-    }
 }
