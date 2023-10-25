@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 08, 2023 lúc 10:16 AM
+-- Thời gian đã tạo: Th10 25, 2023 lúc 04:23 AM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.2.4
 
@@ -389,24 +389,7 @@ CREATE TABLE `videostorage` (
 --
 
 INSERT INTO `videostorage` (`id`, `videoName`, `description`, `videoLength`, `link`, `banner`, `image1`, `image2`, `videoLanguage`, `licenseCost`, `releaseDate`, `purchaseDate`, `watchedTimes`, `supplier`) VALUES
-(2, 'Titanic', 'DẢK', 120, 'h...', '123', '123', '123', NULL, 123, '2023-10-04', '2023-10-05 18:28:02', 1, NULL),
-(27, 'The Avengers', 'Earth\'s mightiest heroes join forces to save the world from an alien invasion.', 143, 'https://www.example.com/theavengers', 'Avengers Banner', 'Avengers Image1', 'Avengers Image2', 1, 9.99, '2012-05-04', '2022-12-15 00:00:00', 350000, 1),
-(28, 'The Dark Knight', 'Batman faces off against the Joker in this epic crime thriller.', 152, 'https://www.example.com/thedarkknight', 'Dark Knight Banner', 'Dark Knight Image1', 'Dark Knight Image2', 1, 14.99, '2008-07-18', '2022-11-10 00:00:00', 280000, 2),
-(29, 'Jurassic Park', 'Dinosaurs are brought back to life in this thrilling adventure.', 127, 'https://www.example.com/jurassicpark', 'Jurassic Park Banner', 'Jurassic Park Image1', 'Jurassic Park Image2', 2, 9.99, '1993-06-11', '2022-10-05 00:00:00', 400000, 3),
-(30, 'Inception', 'A thief enters the dreams of others in this mind-bending sci-fi thriller.', 148, 'https://www.example.com/inception', 'Inception Banner', 'Inception Image1', 'Inception Image2', 1, 12.99, '2010-07-16', '2023-01-20 00:00:00', 220000, 2),
-(31, 'Frozen', 'Join Elsa and Anna in the magical world of Arendelle.', 102, 'https://www.example.com/frozen', 'Frozen Banner', 'Frozen Image1', 'Frozen Image2', 3, 7.99, '2013-11-27', '2022-09-30 00:00:00', 500000, 4),
-(32, 'The Lion King', 'Simba embarks on a journey to reclaim his throne as king of the Pride Lands.', 118, 'https://www.example.com/lionking', 'Lion King Banner', 'Lion King Image1', 'Lion King Image2', 1, 9.99, '1994-06-15', '2022-08-12 00:00:00', 420000, 4),
-(33, 'Pulp Fiction', 'A series of interconnected crime stories unfold in this Quentin Tarantino classic.', 154, 'https://www.example.com/pulpfiction', 'Pulp Fiction Banner', 'Pulp Fiction Image1', 'Pulp Fiction Image2', 1, 14.99, '1994-10-14', '2022-07-25 00:00:00', 360000, 2),
-(34, 'Toy Story', 'Join Woody and Buzz Lightyear on a toy-tastic adventure.', 81, 'https://www.example.com/toystory', 'Toy Story Banner', 'Toy Story Image1', 'Toy Story Image2', 3, 7.99, '1995-11-22', '2022-06-18 00:00:00', 480000, 4),
-(35, 'The Shawshank Redemption', 'Two imprisoned men bond over a number of years, finding solace and eventual redemption.', 142, 'https://www.example.com/shawshank', 'Shawshank Banner', 'Shawshank Image1', 'Shawshank Image2', 1, 9.99, '1994-10-14', '2022-05-30 00:00:00', 380000, 2),
-(36, 'The Lord of the Rings: The Fellowship of the Ring', 'Frodo embarks on a perilous journey to destroy the One Ring.', 178, 'https://www.example.com/lotr1', 'LOTR Banner', 'LOTR Image1', 'LOTR Image2', 1, 12.99, '2001-12-19', '2022-04-14 00:00:00', 420000, 3),
-(37, 'Titanic', 'A love story unfolds aboard the ill-fated RMS Titanic.', 195, 'https://www.example.com/titanic', 'Titanic Banner', 'Titanic Image1', 'Titanic Image2', 1, 14.99, '1997-12-19', '2022-03-20 00:00:00', 560000, 1),
-(38, 'Avatar', 'A paraplegic marine becomes torn between following orders and protecting the world he feels is his home.', 162, 'https://www.example.com/avatar', 'Avatar Banner', 'Avatar Image1', 'Avatar Image2', 1, 11.99, '2009-12-18', '2022-02-10 00:00:00', 490000, 1),
-(39, 'The Matrix', 'A computer hacker discovers a dystopian world ruled by machines.', 136, 'https://www.example.com/matrix', 'Matrix Banner', 'Matrix Image1', 'Matrix Image2', 1, 9.99, '1999-03-31', '2022-01-15 00:00:00', 340000, 3),
-(40, 'Forrest Gump', 'The life story of a man with a low IQ who accidentally influences several historic events.', 142, 'https://www.example.com/forrestgump', 'Forrest Gump Banner', 'Forrest Gump Image1', 'Forrest Gump Image2', 1, 12.99, '1994-07-06', '2021-12-20 00:00:00', 420000, 2),
-(41, 'E.T. the Extra-Terrestrial', 'A young boy befriends a stranded alien and helps him return home.', 115, 'https://www.example.com/et', 'E.T. Banner', 'E.T. Image1', 'E.T. Image2', 1, 7.99, '1982-06-11', '2021-11-05 00:00:00', 390000, 4),
-(42, 'The Godfather', 'The aging patriarch of an organized crime dynasty transfers control to his reluctant son.', 175, 'https://www.example.com/godfather', 'Godfather Banner', 'Godfather Image1', 'Godfather Image2', 1, 14.99, '1972-03-24', '2021-10-10 00:00:00', 480000, 3),
-(43, 'Spider-Man: No Way Home', 'Spider-Man teams up with other Spider-People to stop villains from across the multiverse.', 148, 'https://www.example.com/spiderman', 'Spider-Man Banner', 'Spider-Man Image1', 'Spider-Man Image2', 1, 12.99, '2021-12-17', '2021-09-15 00:00:00', 260000, 1);
+(49, 'One Piece Live Action', '1', 123, 'http://localhost/public/assets/images/One-Piece-Live-Action/link/onepiece-live-action-video.mp4', 'http://localhost/public/assets/images/One-Piece-Live-Action/banner/onepiece-live-action-title.png', 'http://localhost/public/assets/images/One-Piece-Live-Action/image1/onepiece-live-action-card.jpg', 'http://localhost/public/assets/images/One-Piece-Live-Action/image2/onepiece-live-action-banner.png', 1, 123, '2023-10-16', '2023-10-24 20:06:22', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -595,7 +578,7 @@ ALTER TABLE `videolanguage`
 -- AUTO_INCREMENT cho bảng `videostorage`
 --
 ALTER TABLE `videostorage`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT cho bảng `voucher`
