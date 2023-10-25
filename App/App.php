@@ -92,4 +92,15 @@ class App
         require_once 'Errors/' . $name . '.php';
         die;
     }
+    function __service()
+    {
+        global $routes;
+        self::$app = $this;
+        $this->__routes = new Route();
+        $this->__controller = $routes['danh-sach-voucher'];
+        $this->__action = 'index';
+        $this->__params = [];
+
+        $url = $this->handleUrl();
+    }
 }
