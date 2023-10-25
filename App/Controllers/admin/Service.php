@@ -1,8 +1,8 @@
 <?php
 class Service extends AdminController
 {
-    public function __construct(){
-        parent::__construct();
+    public function service(){
+        parent::service();
         $this->model = $this->getModel('admin/ServiceModel');
     }
     //Hiển thị view
