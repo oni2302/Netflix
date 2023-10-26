@@ -7,6 +7,7 @@ class ServiceModel extends BaseModel{
     public int $maxResolution;
     public bool $haveAds;
     public bool $haveHistory;
+    public int $duration;
 
     function tableFill()
     {
@@ -34,16 +35,9 @@ class ServiceModel extends BaseModel{
     public function addServicePackages($data)
     {
         extract($data);
-        $sql = "INSERT INTO service(id, name, price, createDate, maxResolution, haveAds, haveHistory)
-            VALUES ('$id', '$name', '$price', '$createDate', '$maxResolution', '$haveAds', '$haveHistory')";
-        $this->execute($sql);
-    }
-    //Sửa gói dịch vụ
-    public function editServicePackages($data){
-        extract($data);
-        $sql = "UPDATE service(id, name, price, createDate, maxResolution, haveAds, haveHistory)
-            VALUES ('$id', '$name', '$price', '$createDate', '$maxResolution', '$haveAds', '$haveHistory')";
-        $this->execute($sql);
+        $sql = "INSERT INTO service(id, name, price, createDate, maxResolution, haveAds, haveHistory,duration)
+        VALUES ('$id', '$name', '$price', '$createDate', '$maxResolution', '$haveAds', '$haveHistory','$duration')";
+         $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
     //Xóa gói dịch vụ
     public function deleteServicePackages($id){

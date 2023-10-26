@@ -1,4 +1,4 @@
-<form action="<?php echo _WEB . "/admin/voucher/xulieditVoucher/" ?>" method="post">
+<form action="<?php echo _WEB . "/admin/service/addService/" ?>" method="post">
     <div class="row">
         <div class="col-4">
             <div>
@@ -18,12 +18,13 @@
             <input class="form-control" type="text" id="maxResolution" name="maxResolution" required>
 
             <label  class="form-label" for="haveAds">Quảng cáo:</label>
-            <input  class="form-control" type="radio" id="haveAds" name="haveAds" value="yes">yes <br>
-            <input  class="form-control" type="radio" id="haveAds" name="haveAds" value="no">no <br>
+            <input class="form-control" type="text" id="haveAds" name="haveAds" required>
 
             <label  class="form-label" for="haveHistory">Lịch sử xem:</label>
-            <input  class="form-control" type="radio" id="haveHistory" name="haveHistory" value="yes">yes <br>
-            <input  class="form-control" type="radio" id="haveHistory" name="haveHistory" value="no">no <br>
+            <input class="form-control" type="text" id="haveHistory" name="haveHistory" required>
+            <label  class="form-label" for="duration">Thời hạn:</label>
+            <input class="form-control" type="text" id="duration" name="duration" required> <br>
+            <button type="submit" > OK </button>
         </div>
     </div>
 

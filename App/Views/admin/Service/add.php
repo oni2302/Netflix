@@ -1,29 +1,30 @@
-<form action="<?php echo _WEB . "/admin/service/addServicePackages" ?>" method="post">
+<form action="<?php echo _WEB . "/admin/service/addService" ?>" method="post">
     <div class="row">
         <div class="col-4">
             <div>
-         <label class="form-label" for="Id">id:</label>
-            <input class="form-control" type="" id="Id" name="Id" required>
+         <label class="form-label" for="id">id:</label>
+            <input class="form-control" type="id" id="id" name="id" required>
 
-            <label class="form-label" for="Name">Tên gói dịch vụ:</label>
+            <label class="form-label" for="name">Tên gói dịch vụ:</label>
             <input class="form-control" type="text" id="name" name="name" required>
 
-            <label  class="form-label" for="remaining">Giá:</label>
-            <input class="form-control" type="text" id="remaining" name="remaining" required>
+            <label  class="form-label" for="price">Giá:</label>
+            <input class="form-control" type="text" id="price" name="price" required>
 
-            <label class="form-label" for="startDate">Ngày tạo:</label>
-            <input class="form-control" type="date" id="startDate" name="startDate" required>
+            <label class="form-label" for="createDate">Ngày tạo:</label>
+            <input class="form-control" type="date" id="createDate" name="createDate" required>
 
             <label  class="form-label" for="maxResolution">Độ phân giải tối đa:</label>
             <input class="form-control" type="text" id="maxResolution" name="maxResolution" required>
 
             <label  class="form-label" for="haveAds">Quảng cáo:</label>
-            <input  class="form-control" type="radio" id="haveAds" name="haveAds" value="yes">yes <br>
-            <input  class="form-control" type="radio" id="haveAds" name="haveAds" value="no">no <br>
+            <input class="form-control" type="text" id="haveAds" name="haveAds" required>
 
             <label  class="form-label" for="haveHistory">Lịch sử xem:</label>
-            <input  class="form-control" type="radio" id="haveHistory" name="haveHistory" value="yes">yes <br>
-            <input  class="form-control" type="radio" id="haveHistory" name="haveHistory" value="no">no <br>
+            <input class="form-control" type="text" id="haveHistory" name="haveHistory" required>
+            <label  class="form-label" for="duration">Thời hạn:</label> <br>
+            <input class="form-control" type="text" id="duration" name="duration" required> <br>
+            <button type="submit" > add </button>
         </div>
     </div>
 
