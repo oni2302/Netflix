@@ -53,7 +53,7 @@ class Video extends AdminController
         $uploadDir = _ROOT . "/public/assets/images/"; // Thư mục lưu trữ tệp tin tải lên
         $targetDir = $uploadDir . $this->createFolderName($name) . "/" . $key . '/'; // Thư mục con để lưu tệp tin
         $targetFile = $targetDir . basename($file["name"]);
-        $link = _WEB.'/public/assets/images/'.$this->createFolderName($name) . "/" . $key . '/'. basename($file["name"]);
+        $link = '/public/assets/images/'.$this->createFolderName($name) . "/" . $key . '/'. basename($file["name"]);
         // Tạo thư mục con nếu nó chưa tồn tại
         if (!file_exists($targetDir)) {
             mkdir($targetDir, 0777, true);
