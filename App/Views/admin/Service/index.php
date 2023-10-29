@@ -3,7 +3,7 @@ if (empty($service_list)) {
     $service_list = [];
 }
 ?>
-<button style="border-radius: 20px; position:relative; bottom:10px;"><a class="btn" href="/netflix/admin/service/viewAdd/">Add</a></button>
+<a class="btn btn-primary mb-3" href="<?php echo _WEB ?>/admin/service/viewAdd/">Add</a>
 <div class="card px-4 pb-4">
     <h5 class="card-header">Danh sách gói dịch vụ</h5>
     <div class="table-responsive text-nowrap">
@@ -32,8 +32,8 @@ if (empty($service_list)) {
                         <td><?php echo $value['haveHistory']; ?></td>
                         <td><?php echo $value['duration']; ?></td>
                         <td>
-                            <a class="btn" href="/netflix/admin/service/editService/<?php echo $value['id'] ?>">Edit</a>
-                            <a class="btn" href="/netflix/admin/service/deleteService/<?php echo $value['id'] ?>">Delete</a>
+                            <a class="btn" href="<?php echo _WEB ?>/admin/service/editService/<?php echo $value['id'] ?>">Edit</a>
+                            <a class="btn" href="<?php echo _WEB ?>/admin/service/deleteService/<?php echo $value['id'] ?>">Delete</a>
                         </td>
                     </tr>
                 <?php } ?>

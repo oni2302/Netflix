@@ -42,7 +42,7 @@ class VoucherModel extends BaseModel
         // execute chỉ để cho nó thực thị cacsi câu querry này thui
         $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
         if(empty($result))
-            return false;
+            return [];
         return $result;
     }         
 }
