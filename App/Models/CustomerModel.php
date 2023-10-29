@@ -22,7 +22,7 @@ class CustomerModel extends BaseModel
     }
     public function editCustomer($id, $data)
     {
-        $this->UpdateTableDataById('voucher', $data, $id);
+        $this->UpdateTableDataById('useraccount', $data, $id);
     }
     public function GetAllCustomer()
     {
