@@ -8,7 +8,7 @@
     $routes['fetch/(.+)/size'] = 'product/size/$1';
 
     //Service
-    $routes['danh-sach-voucher'] = 'admin/service/index';
+    $routes['danh-sach-service'] = 'admin/service/index';
 
     //Voucher
     $routes['danh-sach-voucher']='admin/voucher/hienthiview';
