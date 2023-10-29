@@ -3,6 +3,7 @@ if (empty($voucher_list)) {
     $vocher_list = [];
 }
 ?>
+<a class="mb-3 btn btn-primary" href="<?php echo _WEB ?>/admin/voucher/taoviewadd">Thêm voucher</a>
 <div class="card px-4 pb-4">
     <h5 class="card-header">Danh sách Voucher</h5>
     <div class="table-responsive text-nowrap">
