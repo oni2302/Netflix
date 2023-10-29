@@ -3,7 +3,7 @@ if (empty($service_list)) {
     $service_list = [];
 }
 ?>
-<a class="btn" href="/netflix/admin/service/viewAdd/">Add</a>
+<button style="border-radius: 20px; position:relative; bottom:10px;"><a class="btn" href="/netflix/admin/service/viewAdd/">Add</a></button>
 <div class="card px-4 pb-4">
     <h5 class="card-header">Danh sách gói dịch vụ</h5>
     <div class="table-responsive text-nowrap">
