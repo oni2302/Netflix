@@ -11,7 +11,6 @@ class App
         $this->__controller = $routes['default_controller'];
         $this->__action = 'index';
         $this->__params = [];
-
         $url = $this->handleUrl();
     }
 
@@ -31,7 +30,6 @@ class App
         $url = $this->getUrl();
         $url = $this->__routes->routeHandle($url);
         $urlArr = array_values(array_filter(explode('/', $url))); //tách đường dẫn
-
         $urlRoute = '';
         if (!empty($urlArr)) {
             foreach ($urlArr as $key => $value) {
