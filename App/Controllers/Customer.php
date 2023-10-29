@@ -27,15 +27,15 @@ class Customer extends BaseController{
         $this->data['title'] = 'Quản lí Khách Hàng';
         $this->renderView('layouts/admin', $this->data);
     }
-    public function deletevoucher($id)
+    public function deletecustomer($id)
     {   
-        $this->model->deleteVoucher($id);
+        $this->model->deletecustomer($id);
        header('location:'._WEB. "/customer/hienthiview"  );
     }
-    public function xulieditVoucher($id)
+    public function xulieditcustomer($id)
     {
-        $this->model->deleteVoucher($id);
-        $this->data['content'] = 'admin/customer/editcustomer';
+        $this->model->deletecustomer($id);
+        $this->data['content'] = 'admin/customer/addcustomer';
         $this->data['sub_content'] = [];
         $this->data['title'] = 'View edit khach hang';
         $this->renderView('layouts/admin', $this->data);

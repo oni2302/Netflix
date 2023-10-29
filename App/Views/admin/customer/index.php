@@ -35,8 +35,8 @@ if (empty($customer_list)) {
                         <td><?php echo $value['address']; ?></td>
                         <td><?php echo $value['currentService']; ?> </td>
                         <td>
-                            <a class="btn" href="<?php echo _WEB ?>/admin/voucher/deletevoucher/<?php echo $value['id'] ?>">Delete</a>
-                            <a class="btn" href="<?php echo _WEB ?>/admin/voucher/xulieditVoucher/<?php echo $value['id'] ?>">Edit</a>
+                            <a class="btn" href="<?php echo _WEB ?>/customer/deletecustomer/<?php echo $value['id'] ?>">Delete</a>
+                            <a class="btn" href="<?php echo _WEB ?>/customer/xulieditcustomer/<?php echo $value['id'] ?>">Edit</a>
                         </td>
                     </tr>
                 <?php } ?>
