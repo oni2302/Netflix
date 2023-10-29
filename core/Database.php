@@ -116,7 +116,7 @@ class Database{
             $valueStr = rtrim($valueStr,',');
             
             $sql = "insert into $table($fieldStr) values ($valueStr);";
-
+            
             $status = $this->query($sql);
             return $this->lastInsertId();
         }

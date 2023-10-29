@@ -10,6 +10,8 @@
     //Service
     $routes['danh-sach-voucher'] = 'admin/service/index';
 
+    //Voucher
+    $routes['danh-sach-voucher']='admin/voucher/hienthiview';
     //Tùy chỉnh đường link
     //Ví dụ $routes['duong_link'] = 'controller/action' => http://localhost/duong_link thì nó sẽ vào controller và action
     //Ví dụ đường link có thêm biến $routes['duong_link/(.+)'] = 'controller/action/$1' Ví dụ nhập link http://localhost/duong_link/1 thì nó gọi controller và action(1)
