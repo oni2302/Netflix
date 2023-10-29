@@ -32,7 +32,7 @@ if (empty($service_list)) {
                         <td><?php echo $value['haveHistory']; ?></td>
                         <td><?php echo $value['duration']; ?></td>
                         <td>
-                            <a class="btn" href="<?php echo _WEB ?>/admin/service/editService/<?php echo $value['id'] ?>">Edit</a>
+                            <a class="btn" href="<?php echo _WEB ?>/admin/service/viewEdit/<?php echo $value['id'] ?>">Edit</a>
                             <a class="btn" href="<?php echo _WEB ?>/admin/service/deleteService/<?php echo $value['id'] ?>">Delete</a>
                         </td>
                     </tr>
