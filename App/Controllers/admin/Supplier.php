@@ -35,7 +35,7 @@
         public function EditSupplier($id){    
             $request= new Request();
             $data= $request->getField();
-            $this->model->editSupplier($data,$id);
+            $this->model->editSupplier($id,$data);
             header('location:'._WEB. "/admin/supplier/index");
         }
         //Xóa nhà cung cấp

@@ -7,6 +7,7 @@ class Service extends AdminController
     }
     //Hiển thị view
     public function index(){
+        $this->data['content'] = 'admin/Service/index';
         $this->data['content'] = 'admin/service/index';
         $this->data['sub_content']['service_list'] = $this->model->getAllServicePackages();
         $this->data['title'] = 'Quản lí gói dịch vụ'; 
@@ -20,9 +21,12 @@ class Service extends AdminController
         $this->renderView('layouts/admin', $this->data);
     }
     //Hiển thị view eidt
-    public function viewEdit(){
+    public function viewEdit($id=''){
+        if(empty($id)){
+            App::$app->showError();
+        }
         $this->data['content'] = 'admin/service/edit';
-        $this->data['sub_content'] = [];
+        $this->data['sub_content']['id'] = $id;
         $this->data['title'] = 'Chỉnh sửa gói dịch vụ';
         $this->renderView('layouts/admin', $this->data);
     }
@@ -35,9 +39,10 @@ class Service extends AdminController
     }
     //Sửa gói dịch vụ
     public function editService($id){    
-        header('location:'._WEB. "/admin/service/viewEdit");
-        $this->model->deleteServicePackages($id); 
+        $request = new Request();
+        $data = $request->getField();
         
+        $this->model->editServicePackages($id,$data); 
     }
     //Xóa gói dịch vụ
     public function deleteService($id){

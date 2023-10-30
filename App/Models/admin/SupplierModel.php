@@ -14,7 +14,7 @@
         public function addSupplier($data){
             $this->InsertDataInto($data,'Supplier');
         }
-        public function editSupplier($data,$id){
+        public function editSupplier($id,$data){
             $this->UpdateTableDataById('Supplier', $data, $id);
         }
         public function deleteSupplier($id){
@@ -24,6 +24,7 @@
         public function getAllSupplier(){
             return $this->SelectAllFrom('Supplier');
         }
+        
         
 
     }

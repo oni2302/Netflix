@@ -31,6 +31,9 @@ class ServiceModel extends BaseModel{
             return false;
         return $result;
     }
+    public function getResolution(){
+        
+    }
     //Thêm gói dịch vụ
     public function addServicePackages($data)
     {
@@ -42,6 +45,17 @@ class ServiceModel extends BaseModel{
     //Xóa gói dịch vụ
     public function deleteServicePackages($id){
         $sql = "DELETE FROM service WHERE id=$id";
+        $this->execute($sql);
+    }
+    //Sua gói dịch vụ
+    public function editServicePackages($id,$data){
+        $sql = "UPDATE service set ";
+        $fieldEdit = "";
+        foreach ($data as $key => $value) {
+            $fieldEdit.=$key."= '".$value."',";
+        }
+        $fieldEdit= rtrim($fieldEdit,',');
+        $sql.=$fieldEdit." WHERE id=$id";
         $this->execute($sql);
     }
 }
