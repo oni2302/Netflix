@@ -15,7 +15,15 @@ class CustomerModel extends BaseModel
     {
         $this->InsertDataInto($data, 'useraccount');
     }
-
+ //hàm lấy hàng cần edit
+ public function getrowedit($id)
+ {
+    $sql = "SELECT * FROM useraccount WHERE id = $id";
+    $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
+     if (empty($result))
+         return false;
+     return $result;
+ }
     public function deleteCustomer($id)
     {
         $this->DeleteFromTableById('useraccount', $id);

@@ -34,6 +34,7 @@ require_once _ROOT.'/app/App.php';
             require_once _ROOT.'/core/Database.php';
         }   
     }
+require_once _ROOT.'/core/SessionManager.php';
 require_once _ROOT.'/core/BaseModel.php';
 require_once _ROOT.'/core/Request.php';
 require_once _ROOT.'/core/BaseController.php';

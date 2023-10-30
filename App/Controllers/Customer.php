@@ -2,6 +2,7 @@
 class Customer extends BaseController{
     public $model;
     public $data = [];
+    public $count=0;
     public function __construct(){
         $this->model = $this->getModel('CustomerModel');
     }
@@ -18,6 +19,7 @@ class Customer extends BaseController{
         $request = new Request();
         $data = $request->getField();
         $this->model->addCustomer($data);
+        $this->count=1;
         header('location:'._WEB. "/customer/hienthiview");        
     }
     public function hienthiview()
@@ -33,11 +35,21 @@ class Customer extends BaseController{
        header('location:'._WEB. "/customer/hienthiview"  );
     }
     public function xulieditcustomer($id)
+    {   
+        $this->data['content'] = 'admin/customer/editcustomer';
+        //lấy hàng càng edit
+        $this->data['sub_content']['temp'] = $this->model->getrowedit($id);
+        $this->data['title'] = 'View edit khach hang';
+        $this->renderView('layouts/admin', $this->data);
+    }
+   
+    public function yesforedit($id)
     {
         $this->model->deletecustomer($id);
         $this->data['content'] = 'admin/customer/addcustomer';
         $this->data['sub_content'] = [];
-        $this->data['title'] = 'View edit khach hang';
+        $this->data['title'] = 'View dai ';
         $this->renderView('layouts/admin', $this->data);
     }
+
 }
