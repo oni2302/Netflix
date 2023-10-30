@@ -14,7 +14,7 @@
     $routes['danh-sach-voucher']='admin/voucher/hienthiview';
 
     //Supplier
-    $routes['danh-sach-supplier'] = 'admin/voucher/index';
+    $routes['danh-sach-supplier'] = 'admin/supplier/index';
     //Tùy chỉnh đường link
     //Ví dụ $routes['duong_link'] = 'controller/action' => http://localhost/duong_link thì nó sẽ vào controller và action
     //Ví dụ đường link có thêm biến $routes['duong_link/(.+)'] = 'controller/action/$1' Ví dụ nhập link http://localhost/duong_link/1 thì nó gọi controller và action(1)

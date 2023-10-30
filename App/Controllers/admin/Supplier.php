@@ -32,7 +32,7 @@
             $this->renderView('layouts/admin', $this->data);
         }
         //Sửa nhà cung cấp
-        public function EditSupplier($id){    
+        public function editSupplier($id){    
             $request= new Request();
             $data= $request->getField();
             $this->model->editSupplier($id,$data);

@@ -24,8 +24,8 @@ if (empty($supplier_list)) {
                         <td><?php echo $value['addDate']; ?></td>
                         <td><?php echo $value['totalPaying']; ?></td>
                         <td>
-                            <a class="btn" href="/netflix/admin/supplier/viewEdit/<?php echo $value['id'] ?>">Edit</a>
-                            <a class="btn" href="/netflix/admin/supplier/deleteSupplier/<?php echo $value['id'] ?>">Delete</a>
+                            <a class="btn" href="<?php echo _WEB ?>/admin/supplier/viewEdit/<?php echo $value['id'] ?>">Edit</a>
+                            <a class="btn" href="<?php echo _WEB ?>/admin/supplier/deleteSupplier/<?php echo $value['id'] ?>">Delete</a>
                         </td>
                     </tr>
                 <?php } ?>
