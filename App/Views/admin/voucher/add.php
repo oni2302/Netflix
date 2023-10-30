@@ -7,7 +7,7 @@
             <label class="form-label" for="code">Mã giảm giá:</label>
             <input class="form-control" type="text" id="code"placeholder="GIAMGIA2023" name="code" required>
             <label class="form-label" for="discount">Giảm giá:</label>
-            <input class="form-control" type="text" id="discount"  name="discount" required>
+            <input class="form-control" type="text" id="discount" name="discount" required>
 
             <label  class="form-label" for="remaining">Số lượng còn lại:</label>
             <input class="form-control" type="text" id="remaining" name="remaining" required>

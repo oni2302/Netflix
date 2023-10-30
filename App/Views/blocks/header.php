@@ -1,8 +1,8 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-    <div class="app-brand demo">
+    <div class="app-brand demo justify-content-center">
         <a href="index.html" class="app-brand-link">
-            <span class="app-brand-logo demo">
-                <img width="200" height="100" src="<?php echo _WEB ?>/public/assets/images/brand/netflix.png" alt="" srcset="" style="object-fit: cover;">
+        <span class="app-brand-logo demo ">
+                <img width="150" src="<?php echo _WEB ?>/public/assets/images/brand/netflix.png" alt="" srcset="" style="object-fit: cover;">
             </span>
             <span class="app-brand-text demo menu-text fw-bolder ms-2"></span>
         </a>
