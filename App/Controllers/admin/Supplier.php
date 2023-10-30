@@ -25,16 +25,19 @@
             header('location:'._WEB. "/admin/supplier/index");
         }
         //Hiển thị view edit
-        public function viewEdit(){
+        public function viewEdit($id=''){
+            if(empty($id)){
+                App::$app->showError();
+            }
             $this->data['content'] = 'admin/supplier/edit';
-            $this->data['sub_content'] = [];
+            $this->data['sub_content']['id'] = $id;
             $this->data['title'] = 'Chỉnh sửa nhà cung cấp';
             $this->renderView('layouts/admin', $this->data);
         }
         //Sửa nhà cung cấp
-        public function editSupplier($id){    
+        public function EditSupplier($id){    
             $request= new Request();
-            $data= $request->getField();
+            $data = $request->getField();
             $this->model->editSupplier($id,$data);
             header('location:'._WEB. "/admin/supplier/index");
         }
