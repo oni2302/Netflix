@@ -3,6 +3,7 @@ if (empty($voucher_list)) {
     $vocher_list = [];
 }
 ?>
+<a class="mb-3 btn btn-primary" href="<?php echo _WEB ?>/admin/voucher/taoviewadd">Thêm voucher</a>
 <div class="card px-4 pb-4">
     <h5 class="card-header">Danh sách Voucher</h5>
     <div class="table-responsive text-nowrap">
@@ -20,25 +21,25 @@ if (empty($voucher_list)) {
                     <th>Ngày Thực Tế Được Tạo</th>
                 </tr>
             </thead>
-            <tbody> 
-                    <?php foreach ($voucher_list as $key => $value) { ?>
-                        <tr>
-                </th>
-                <th scope="row"><?php echo $value['id']; ?>
-                <td><?php echo $value['name']; ?></td>
-                <td><?php echo $value['code']; ?></td>
-                <td><?php echo $value['discount']; ?></td>
-                <td><?php echo $value['remaining']; ?></td>
-                <td><?php echo $value['startDate']; ?></td>
-                <td><?php echo $value['endDate']; ?></td>
-                <td><?php echo $value['specificFor']; ?></td>
-                <td><?php echo $value['createDate']; ?></td>
-                <td>
-                  <a class="btn" href="/netflix/admin/voucher/deletevoucher/<?php echo $value['id'] ?>" >Delete</a>
-                  <a class="btn" href="/netflix/admin/voucher/xulieditVoucher/<?php echo $value['id'] ?>" >Edit</a>
-                </td>
-                </tr>
-            <?php } ?>
+            <tbody>
+                <?php foreach ($voucher_list as $key => $value) { ?>
+                    <tr>
+                        </th>
+                        <th scope="row"><?php echo $value['id']; ?>
+                        <td><?php echo $value['name']; ?></td>
+                        <td><?php echo $value['code']; ?></td>
+                        <td><?php echo $value['discount']; ?></td>
+                        <td><?php echo $value['remaining']; ?></td>
+                        <td><?php echo $value['startDate']; ?></td>
+                        <td><?php echo $value['endDate']; ?></td>
+                        <td><?php echo $value['specificFor']; ?></td>
+                        <td><?php echo $value['createDate']; ?></td>
+                        <td>
+                            <a class="btn" href="<?php echo _WEB ?>/admin/voucher/deletevoucher/<?php echo $value['id'] ?>">Delete</a>
+                            <a class="btn" href="<?php echo _WEB ?>/admin/voucher/xulieditVoucher/<?php echo $value['id'] ?>">Edit</a>
+                        </td>
+                    </tr>
+                <?php } ?>
             </tbody>
         </table>
     </div>

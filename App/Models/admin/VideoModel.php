@@ -28,54 +28,27 @@ class VideoModel extends BaseModel
     }
     public function getAllVideo()
     {
-        $sql = "SELECT * FROM `VideoStorage`";
-        $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
-        if (empty($result))
-            return false;
-        return $result;
+        return $this->SelectAllFrom('videoStorage');
     }
     public function getLanguage()
     {
-        $sql = "SELECT * FROM `VideoLanguage`";
-        $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
-        if (empty($result))
-            return false;
-        return $result;
+        return $this->SelectAllFrom('VideoLanguage');
     }
     public function getSupplier()
     {
-        $sql = "SELECT * FROM `supplier`";
-        $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
-        if (empty($result))
-            return false;
-        return $result;
-    }
-    public function getAny()
-    {
-        $sql = "SELECT * FROM `supplier`";
-        $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
-        if (empty($result))
-            return false;
-        return $result;
+        return $this->SelectAllFrom('supplier');
     }
     public function addMovie($data)
     {
-        $sql = "INSERT INTO videoStorage(";
-        foreach ($data as $key => $value) {
-            $sql .= $key . ',';
-        }
-        $sql = rtrim($sql, ',');
-        $sql .= ')VALUES(';
-        foreach ($data as $key => $value) {
-            $sql .= "'" . $value . "',";
-        }
-        $sql = rtrim($sql, ',');
-        $sql .= ')';
         try {
-            $this->execute($sql);
+            $this->InsertDataInto($data, 'videoStorage');
             return true;
         } catch (\Throwable $th) {
             return false;
         }
+    }
+    public function editMovie($data, $id)
+    {
+        $this->UpdateTableDataById('videoStorage', $data, $id);
     }
 }

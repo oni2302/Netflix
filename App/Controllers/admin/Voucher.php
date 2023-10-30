@@ -9,7 +9,7 @@ class Voucher extends AdminController
     public function taoviewadd()
     {
         $this->data['content'] = 'admin/voucher/add';
-        $this->data['sub_content'] = [];
+        $this->data['sub_content']['service'] = $this->model->SelectAllFrom('service');
         $this->data['title'] = 'View dai';
         $this->renderView('layouts/admin', $this->data);
     }

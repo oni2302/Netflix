@@ -42,8 +42,7 @@ class Service extends AdminController
         $request = new Request();
         $data = $request->getField();
         
-        $this->model->editServicePackages($id,$data);
-        header('location:'._WEB. "/admin/service/index");
+        $this->model->editServicePackages($id,$data); 
     }
     //Xóa gói dịch vụ
     public function deleteService($id){

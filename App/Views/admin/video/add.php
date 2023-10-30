@@ -24,7 +24,7 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="videoLength">Thời lượng phim</label>
-                    <input type="text" id="videoLength" class="form-control" placeholder="00:00:00" name="videoLength">
+                    <input type="text" id="videoLength" class="form-control" placeholder="Phút" name="videoLength">
                 </div>
                 <div class="mb-3">
                     <label class="form-label" for="link">File phim</label>
@@ -35,11 +35,11 @@
                     <input type="file" id="banner" class="form-control" placeholder="URL banner" name="banner" accept="image/*" data-title="Chọn banner">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="image1">File hình 1</label>
+                    <label class="form-label" for="image1">File hình Mobile</label>
                     <input type="file" id="image1" class="form-control" name="image1" accept="image/*" data-title="Chọn ảnh">
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="image2">File hình 2</label>
+                    <label class="form-label" for="image2">File hình tên phim</label>
                     <input type="file" id="image2" class="form-control" name="image2" accept="image/*" data-title="Chọn ảnh">
                 </div>
                 <div class="mb-3">
