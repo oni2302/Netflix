@@ -32,24 +32,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/vendor/fonts/boxicons.css">
+    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/vendor/fonts/boxicons.css">
 
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/vendor/css/core.css" class="template-customizer-core-css">
-    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/vendor/css/theme-default.css" class="template-customizer-theme-css">
-    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/css/demo.css">
+    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/vendor/css/core.css" class="template-customizer-core-css">
+    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/vendor/css/theme-default.css" class="template-customizer-theme-css">
+    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/css/demo.css">
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
 
 
     <!-- Page CSS -->
     <!-- Page -->
-    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/vendor/css/pages/page-auth.css">
+    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/vendor/css/pages/page-auth.css">
 
     <!-- Helpers -->
-    <script src="<?php echo _WEB?>/public/assets/sneat/vendor/js/helpers.js"></script>
+    <script src="<?php _WEB?>/public/assets/sneat/vendor/js/helpers.js"></script>
     <style type="text/css">
         .layout-menu-fixed .layout-navbar-full .layout-menu,
         .layout-page {
@@ -62,7 +62,7 @@
     </style>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="<?php echo _WEB?>/public/assets/sneat/js/config.js"></script>
+    <script src="<?php _WEB?>/public/assets/sneat/js/config.js"></script>
 
     <script type="text/javascript" src="https://a.omappapi.com/app/js/api.min.js" async="" data-user="252882" data-account="269977"></script>
     <link rel="stylesheet" href="https://a.omappapi.com/app/js/api.min.css" id="omapi-css" media="all">

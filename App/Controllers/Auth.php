@@ -6,38 +6,57 @@ class Auth extends BaseController
         $this->model = $this->getModel('AuthModel');
     }
     //Đăng nhập
-    public function signin(){
+    public function signin()
+    {
         $this->data['content'] = 'auth/signin';
-        $this->data['sub_content']=[];
+        $this->data['sub_content'] = [];
         $this->data['title'] = 'Đăng nhập';
         $this->renderView('layouts/auth', $this->data);
     }
     //Xử lí đăng nhập
-    public function signinHandle(){
+    public function signinHandle()
+    {
         $request = new Request();
         $data = $request->getField();
         $account = $this->model->getAccount($data);
-        if(!empty($account)){
-            SessionManager::SetSession(SessionManager::USER_ACCOUNT,$account);
+        if (!empty($account)) {
+            SessionManager::SetSession(SessionManager::USER_ACCOUNT, $account);
             $role = $this->model->checkRole($account['role']);
             SessionManager::SetSession(SessionManager::USER_ROLE, $role);
-            if($role == "khachhang"){
-                header('location:'._WEB);
-            }else{
-                header('location:'._WEB.'/admin/video/index');
+            if ($role == "khachhang") {
+                header('location:' . _WEB);
+            } else {
+                header('location:' . _WEB . '/admin/video/index');
             }
         }
     }
     //Đăng kí
-    public function signup(){
-
+    public function signup()
+    {
+        $this->data['content'] = 'auth/signun';
+        $this->data['sub_content'] = [];
+        $this->data['title'] = 'Đăng ký';
+        $this->renderView('layouts/auth', $this->data);
     }
     //Xử lí đăng kí
-    public function signupHandle(){
-
+    public function signupHandle()
+    {
+        $request =  new Request();
+        $data = $request->getField();
+        if ($data['pass'] == $data['repass']) {
+            unset($data['repass']);
+            if ($this->model->createAccount($data)) {
+                header('location:' . _WEB . '/auth/signin');
+            } else {
+                header('location:' . _WEB . '/auth/signup');
+            }
+        }else{
+            header('location:' . _WEB . '/auth/signup');
+        }
     }
     //Đăng xuất
-    public function signout(){
-
+    public function signout()
+    {
+        SessionManager::LogOutSession();
     }
 }

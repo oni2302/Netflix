@@ -15,19 +15,22 @@
                 <h4 class="mb-2">Đăng kí thoyy 🚀</h4>
                 <p class="mb-4">Tạo tài khoản và xem phim thoyyy!</p>
 
-                <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+                <form id="formAuthentication" class="mb-3" action="<?php echo _WEB ?>/auth/signupHandle" method="POST">
                     <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
+                        <label for="username" class="form-label">Tên tài khoản</label>
                         <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" autofocus="">
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
+                    <div class="mb-3 form-password-toggle">
+                        <label class="form-label" for="password">Mật khẩu</label>
+                        <div class="input-group input-group-merge">
+                            <input type="password" id="password" class="form-control" name="pass" placeholder="············" aria-describedby="password">
+                            <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                        </div>
                     </div>
                     <div class="mb-3 form-password-toggle">
-                        <label class="form-label" for="password">Password</label>
+                        <label class="form-label" for="password">Nhập lại mật khẩu</label>
                         <div class="input-group input-group-merge">
-                            <input type="password" id="password" class="form-control" name="password" placeholder="············" aria-describedby="password">
+                            <input type="password" id="password" class="form-control" name="repass" placeholder="············" aria-describedby="password">
                             <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                         </div>
                     </div>
