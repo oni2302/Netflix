@@ -27,4 +27,12 @@ class AuthModel extends BaseModel
         $sql = "SELECT * FROM `useraccount` WHERE username='".$data['username']."' AND pass = '".$data['pass']."'";
         return $this->execute($sql)->fetch(PDO::FETCH_ASSOC);
     }
+    public function createAccount($data){
+        try {
+            $this->InsertDataInto($data,'useraccount');
+            return true;
+        } catch (\Throwable $th) {
+            return false;
+        }
+    }
 }
