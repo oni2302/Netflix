@@ -24,7 +24,7 @@
             <input class="form-control" type="text" id="haveHistory" name="haveHistory" required>
             <label  class="form-label" for="duration">Thời hạn:</label> <br>
             <input class="form-control" type="text" id="duration" name="duration" required> <br>
-            <button type="submit" > add </button>
+            <button class="btn btn-primary" type="submit" > Thêm dịch vụ </button>
         </div>
     </div>
 
