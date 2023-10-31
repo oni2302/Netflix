@@ -14,12 +14,12 @@ class HomeModel extends BaseModel
     {
         parent::__construct();
     }
-    public function getNewProduct(){
-        // $sql="call getNewProduct()";
-        // $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
-        // if(!empty($result)){
-        //     return $result;
-        // }
-        return false;
+    public function getAllService(){
+        $sql="call getAllService()";
+        $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
+        if(!empty($result)){
+            return $result;
+        }
+        return [];
     }
 }

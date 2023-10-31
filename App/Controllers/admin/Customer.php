@@ -51,5 +51,4 @@ class Customer extends BaseController{
         $this->data['title'] = 'View dai ';
         $this->renderView('layouts/admin', $this->data);
     }
-
 }

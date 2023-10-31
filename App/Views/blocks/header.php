@@ -59,18 +59,13 @@
             <span class="menu-header-text">Chức năng nâng cao</span>
         </li>
         <li class="menu-item">
-            <a href="<?php echo _WEB ?>/admin/video/index" class="menu-link">
+            <a href="<?php echo _WEB ?>/admin/adsPartner/index" class="menu-link">
                 <div data-i18n="Without menu">Đối tác quảng cáo</div>
             </a>
         </li>
         <li class="menu-item">
-            <a href="<?php echo _WEB ?>/admin/service/index" class="menu-link">
+            <a href="<?php echo _WEB ?>/admin/ads/hienthiview" class="menu-link">
                 <div data-i18n="Without navbar">Quảng cáo</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="<?php echo _WEB ?>/admin/voucher/hienthiview" class="menu-link">
-                <div data-i18n="Container">Bình luận</div>
             </a>
         </li>
         <li class="menu-item">
