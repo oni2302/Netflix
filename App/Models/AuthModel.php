@@ -3,11 +3,11 @@ class AuthModel extends BaseModel
 {
     function tableFill()
     {
-
+        
     }
     function fieldFill()
     {
-
+        
     }
 
     public function __construct()
@@ -26,5 +26,13 @@ class AuthModel extends BaseModel
     public function getAccount($data){
         $sql = "SELECT * FROM `useraccount` WHERE username='".$data['username']."' AND pass = '".$data['pass']."'";
         return $this->execute($sql)->fetch(PDO::FETCH_ASSOC);
+    }
+    public function createAccount($data){
+        try {
+            $this->InsertDataInto($data,'useraccount');
+            return true;
+        } catch (\Throwable $th) {
+            return false;
+        }
     }
 }

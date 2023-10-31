@@ -18,4 +18,8 @@ class SessionManager {
         }
         return null;
     }
+    public static function LogOutSession(){
+        unset($_SESSION[self::USER_ACCOUNT]);
+        unset($_SESSION[self::USER_ROLE]);
+    }
 }

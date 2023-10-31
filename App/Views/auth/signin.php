@@ -7,7 +7,7 @@
                 <div class="app-brand justify-content-center">
                     <a href="<?php echo _WEB ?>" class="app-brand-link gap-2">
                         <span class="app-brand-logo demo">
-                            <img src="<?php echo _WEB ?>/public/assets/images/brand/netflix1.png" width="200" alt="" srcset="">
+                            <img src="<?php echo _WEB ?>/public/assets/images/brand/netflix.png" width="200" alt="" srcset="">
                         </span>
                     </a>
                 </div>

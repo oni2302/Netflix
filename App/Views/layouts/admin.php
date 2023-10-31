@@ -33,12 +33,15 @@
       <?php $this->renderView('blocks/header'); ?>
       <!-- Layout container -->
       <div class="layout-page">
-      <nav class="d-xl-none layout-navbar navbar navbar-detached p-3 align-items-center p-1 ms-1 me-0 mt-1" style="width:fit-content !important;" id="layout-navbar">
+        <nav class="d-xl-none layout-navbar navbar navbar-detached p-3 align-items-center p-1 ms-1 me-0 mt-1" style="width:fit-content !important;" id="layout-navbar">
           <div class="layout-menu-toggle navbar-nav align-items-xl-center d-xl-none ">
             <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
               <i class="bx bx-menu bx-sm"></i>
             </a>
           </div>
+
+
+
         </nav>
         <!-- Content wrapper -->
         <div class="content-wrapper">
