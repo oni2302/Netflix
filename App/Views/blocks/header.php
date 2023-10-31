@@ -54,7 +54,7 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="<?php echo _WEB ?>/admin/video/index" class="menu-link">
+                    <a href="<?php echo _WEB ?>/admin/supplier/index" class="menu-link">
                         <div data-i18n="Blank">Nhà cung cấp</div>
                     </a>
                 </li>
