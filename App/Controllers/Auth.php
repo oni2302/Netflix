@@ -33,7 +33,7 @@ class Auth extends BaseController
     //Đăng kí
     public function signup()
     {
-        $this->data['content'] = 'auth/signun';
+        $this->data['content'] = 'auth/signup';
         $this->data['sub_content'] = [];
         $this->data['title'] = 'Đăng ký';
         $this->renderView('layouts/auth', $this->data);
