@@ -39,6 +39,5 @@ class Ads extends AdminController
         $this->data['title'] = 'View them quang cao';
         $this->renderView('layouts/admin', $this->data);
     }
-
 }
 ?>
