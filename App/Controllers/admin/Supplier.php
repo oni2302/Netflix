@@ -7,7 +7,7 @@
         public function index(){
             $this->data['content'] = 'admin/supplier/index';
             $this->data['sub_content']['supplier_list'] = $this->model->getAllSupplier();
-            $this->data['title'] = 'Quản lí gói dịch vụ'; 
+            $this->data['title'] = 'Quản lí nhà cung cấp'; 
             $this->renderView('layouts/admin', $this->data);
         }
         //Hiển thị view add
