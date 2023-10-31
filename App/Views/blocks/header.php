@@ -49,7 +49,7 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="<?php echo _WEB ?>/admin/video/index" class="menu-link">
+                    <a href="<?php echo _WEB ?>/admin/ads/hienthiview" class="menu-link">
                         <div data-i18n="Fluid">Quảng cáo</div>
                     </a>
                 </li>
