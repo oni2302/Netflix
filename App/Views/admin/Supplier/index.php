@@ -3,7 +3,7 @@ if (empty($supplier_list)) {
     $supplier_list = [];
 }
 ?>
-<button style="border-radius: 20px; position:relative; bottom:10px;"><a class="btn" href="/netflix/admin/supplier/viewAdd/">Add</a></button>
+<button class="btn btn-primary" style="border-radius: 20px; position:relative; bottom:10px;"><a class="btn" style="color: white;" href="/netflix/admin/supplier/viewAdd/">Add</a></button>
 <div class="card px-4 pb-4">
     <h5 class="card-header">Danh sách nhà cung cấp</h5>
     <div class="table-responsive text-nowrap">
