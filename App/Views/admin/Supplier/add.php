@@ -13,7 +13,7 @@
 
             <label class="form-label" for="totalPaying">Tổng thanh toán:</label>
             <input class="form-control" type="totalPaying" id="totalPaying" name="totalPaying" required> <br>
-            <button type="submit" > add </button>
+            <button class="btn btn-primary mb-3" type="submit" > Thêm </button>
         </div>
     </div>
 

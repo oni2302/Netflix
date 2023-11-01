@@ -3,8 +3,7 @@ if (empty($supplier_list)) {
     $supplier_list = [];
 }
 ?>
-<button class="btn btn-primary" style="border-radius: 20px; position:relative; bottom:10px;"><a class="btn" style="color: white;" href="/netflix/admin/supplier/viewAdd/">Add</a></button>
-<div class="card px-4 pb-4">
+<a class="btn btn-primary mb-3" href="<?php echo _WEB ?>/admin/supplier/viewAdd/">Thêm nhà cung cấp</a><div class="card px-4 pb-4">
     <h5 class="card-header">Danh sách nhà cung cấp</h5>
     <div class="table-responsive text-nowrap">
         <table class="table" id="videoTable">
