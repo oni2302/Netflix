@@ -10,7 +10,7 @@
 
                 <label class="form-label" for="totalPaying">Tổng thanh toán:</label>
                 <input class="form-control" type="number" id="totalPaying" name="totalPaying" required> <br>
-                <button class="btn btn-primary" type="submit"> Edit </button>
+                <button class="btn btn-primary" type="submit"> Chỉnh sửa </button>
             </div>
         </div>
     </div>

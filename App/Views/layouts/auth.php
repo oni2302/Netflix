@@ -36,17 +36,17 @@
 
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/vendor/css/core.css" class="template-customizer-core-css">
-    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/vendor/css/theme-default.css" class="template-customizer-theme-css">
-    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/css/demo.css">
+    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/vendor/css/core.css" class="template-customizer-core-css">
+    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/vendor/css/theme-default.css" class="template-customizer-theme-css">
+    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/css/demo.css">
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
 
 
     <!-- Page CSS -->
     <!-- Page -->
-    <link rel="stylesheet" href="<?php _WEB?>/public/assets/sneat/vendor/css/pages/page-auth.css">
+    <link rel="stylesheet" href="<?php echo _WEB?>/public/assets/sneat/vendor/css/pages/page-auth.css">
 
     <!-- Helpers -->
     <script src="<?php _WEB?>/public/assets/sneat/vendor/js/helpers.js"></script>
