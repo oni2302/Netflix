@@ -25,12 +25,41 @@
 </head>
 
 <body>
-  <?php $this->renderView('blocks/header-customer'); ?>
-  <?php $this->renderView($content, $sub_content); ?>
-  <?php $this->renderView('blocks/footer-customer'); ?>
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <!-- Menu -->
 
-  <!-- Overlay -->
-  <div class="layout-overlay layout-menu-toggle"></div>
+      <?php $this->renderView('blocks/header-customer'); ?>
+      <!-- Layout container -->
+      <div class="layout-page">
+        <nav class="d-xl-none layout-navbar navbar navbar-detached p-3 align-items-center p-1 ms-1 me-0 mt-1" style="width:fit-content !important;" id="layout-navbar">
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center d-xl-none ">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="bx bx-menu bx-sm"></i>
+            </a>
+          </div>
+
+
+
+        </nav>
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <!-- Layout Demo -->
+
+            <?php $this->renderView($content, $sub_content); ?>
+            <!--/ Layout Demo -->
+          </div>
+          <?php $this->renderView('blocks/footer-customer'); ?>
+        </div>
+        <!--/ Layout Demo -->
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
   </div>
   <!-- / Layout wrapper -->
 

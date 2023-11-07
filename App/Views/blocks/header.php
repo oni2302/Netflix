@@ -17,7 +17,7 @@
     <ul class="menu-inner py-1">
         <!-- Dashboard -->
         <li class="menu-item">
-            <a href="index.html" class="menu-link">
+            <a href="<?php echo _WEB ?>/admin/dashboard/index" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Bảng điều khiển</div>
             </a>
@@ -64,7 +64,7 @@
             </a>
         </li>
         <li class="menu-item">
-            <a href="<?php echo _WEB ?>/admin/ads/hienthiview" class="menu-link">
+            <a href="<?php echo _WEB ?>/admin/ads/index" class="menu-link">
                 <div data-i18n="Without navbar">Quảng cáo</div>
             </a>
         </li>

@@ -9,7 +9,7 @@ class AdminController extends BaseController{
             header('location:'._WEB.'/auth/signin');
             die;                                             
         }
-        if(SessionManager::GetSession(SessionManager::USER_ROLE)=="khachhang"){
+        if(SessionManager::GetSession(SessionManager::USER_ROLE)!="admin"){
             App::$app->showError('no-privilege');
         }
     }

@@ -13,8 +13,9 @@ if (empty($ads_list)) {
                     <th>#Mã</th>
                     <th>Bên Cung Cấp</th>
                     <th>Đường Dẫn</th>
-                    <th>Thời Lượng</th>
+                    <th>Lượt xem</th>
                     <th>Ngày Tạo</th>
+                    <th>Trạng thái</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,11 +25,13 @@ if (empty($ads_list)) {
                         <th scope="row"><?php echo $value['id']; ?>
                         <td><?php echo $value['adsFrom']; ?></td>
                         <td><?php echo $value['adsLink']; ?></td>
-                        <td><?php echo $value['watchedTimes'] ; ?> phút</td>
+                        <td><?php echo $value['watchedTimes']; ?></td>
                         <td><?php echo $value['addDate']; ?></td>
+                        <td><?php echo $value['statusTitle']; ?></td>
                         <td>
-                            <a class="btn" href="<?php echo _WEB ?>/admin/Ads/deleteAds/<?php echo $value['id'] ?>">Delete</a>
-                            <a class="btn" href="<?php echo _WEB ?>/admin/Ads/xulieditAds/<?php echo $value['id'] ?>">Edit</a>
+                        <th><?php if ($value['statusTitle'] == "Chờ xác nhận") { ?><a href="<?php echo _WEB . "/admin/Ads/confirmAds/" . $value['id'] ?>" class="btn btn-success">Xác nhận</a><?php } else { ?> <button class="btn btn-success" disabled>Xác nhận</button><?php } ?>
+                            <a class="btn btn-danger" href="<?php echo _WEB ?>/admin/Ads/lockAds/<?php echo $value['id'] ?>">Khóa quảng cáo</a>
+                        </th>
                         </td>
                     </tr>
                 <?php } ?>

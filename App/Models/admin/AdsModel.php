@@ -3,32 +3,22 @@ class AdsModel extends BaseModel
 {
     function tableFill()
     {
-        
     }
     function fieldFill()
     {
-        
     }
 
     public function __construct()
     {
         parent::__construct();
     }
-    public function addAds($data)
-    {
-        $this->InsertDataInto($data, 'advertisement');
-    }
-    public function deleteAds($id)
-    {
-        $this->DeleteFromTableById('advertisement', $id);
-    }
-    public function editVoucher($id, $data)
+    public function updateAds($id, $data)
     {
         $this->UpdateTableDataById('advertisement', $data, $id);
     }
     public function getAllAds()
     {
-       return $this->SelectAllFrom('advertisement');
+        $sql = "SELECT a.*,s.statusTitle FROM advertisement a JOIN adsstatus s ON a.statusAds = s.id";
+        return $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
-   
 }
