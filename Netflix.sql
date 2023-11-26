@@ -781,6 +781,8 @@ CREATE TABLE `service` (
 --
 
 INSERT INTO `service` (`id`, `name`, `price`, `createDate`, `maxResolution`, `haveAds`, `haveHistory`, `duration`) VALUES
+(4, 'Basic Service', 9.99, '2023-01-15 00:00:00', 2, b'1', b'1', 30),
+(5, 'Premium Service', 14.99, '2023-02-10 00:00:00', 4, b'0', b'1', 30),
 (6, 'Family Plan', 19.99, '2023-03-05 00:00:00', 4, b'0', b'1', 30);
 
 -- --------------------------------------------------------
