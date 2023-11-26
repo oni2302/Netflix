@@ -18,11 +18,9 @@ class manageInforModel extends BaseModel
         $this->UpdateTableDataById('useraccount', $data, $id);
     }
     public function getInfor(){
-        $sql = "SELECT * FROM useraccount";
-        $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
-        if (empty($result))
-            return false;
-        return $result;
+        $id = SessionManager::GetSession(SessionManager::USER_ACCOUNT)['id'];
+        $sql = "SELECT * from useraccount where id='$id'";
+        return $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
     
 }

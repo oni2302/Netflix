@@ -16,15 +16,16 @@
             $request = new Request();
             $data = $request->getField();
             $this->model->editInfo($id,$data); 
+            header('location:'._WEB. "/user/manage/index");
         }
         //Hiển Thị view edit
         public function viewEdit($id=''){
             if(empty($id)){
                 App::$app->showError();
             }
-            $this->data['content'] = 'Home/edit';
-            $this->data['sub_content']['id'] = $id;
-            $this->data['title'] = 'Chỉnh sửa gói dịch vụ';
+            $this->data['content'] = 'user/manage/editInfor';
+            $this->data['sub_content']['manageInfor'] = $this->model->getInfor();
+            $this->data['title'] = 'Chỉnh sửa thông tin cá nhân';
             $this->renderView('layouts/admin', $this->data);
         }
     }
