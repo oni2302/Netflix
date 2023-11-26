@@ -17,13 +17,13 @@
     <ul class="menu-inner py-1">
         <!-- Dashboard -->
         <li class="menu-item">
-            <a href="index.html" class="menu-link">
+            <a href="<?php echo _WEB ?>/admin/dashboard/index" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Bảng điều khiển</div>
             </a>
         </li>
         <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Thêm xóa sửa</span>
+            <span class="menu-header-text">Chức năng cơ bản</span>
         </li>
         <!-- Layouts -->
         <li class="menu-item active open">
@@ -39,26 +39,39 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="<?php echo _WEB ?>/admin/service/index" class="menu-link">
-                        <div data-i18n="Without navbar">Dịch vụ</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="<?php echo _WEB ?>/admin/voucher/hienthiview" class="menu-link">
-                        <div data-i18n="Container">Ưu đãi</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="<?php echo _WEB ?>/admin/video/index" class="menu-link">
-                        <div data-i18n="Fluid">Quảng cáo</div>
-                    </a>
-                </li>
-                <li class="menu-item">
                     <a href="<?php echo _WEB ?>/admin/supplier/index" class="menu-link">
-                        <div data-i18n="Blank">Nhà cung cấp</div>
+                        <div data-i18n="Without navbar">Nhà cung cấp</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="<?php echo _WEB ?>/admin/service/index" class="menu-link">
+                        <div data-i18n="Container">Gói dịch vụ</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="<?php echo _WEB ?>/admin/customer/hienthiview" class="menu-link">
+                        <div data-i18n="Fluid">Khách hàng</div>
                     </a>
                 </li>
             </ul>
+        </li>
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Chức năng nâng cao</span>
+        </li>
+        <li class="menu-item">
+            <a href="<?php echo _WEB ?>/admin/adsPartner/index" class="menu-link">
+                <div data-i18n="Without menu">Đối tác quảng cáo</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="<?php echo _WEB ?>/admin/ads/index" class="menu-link">
+                <div data-i18n="Without navbar">Quảng cáo</div>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="<?php echo _WEB ?>/admin/voucher/hienthiview" class="menu-link">
+                <div data-i18n="Container">Bình luận</div>
+            </a>
         </li>
 
     </ul>

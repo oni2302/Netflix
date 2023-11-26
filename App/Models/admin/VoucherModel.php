@@ -15,6 +15,7 @@ class VoucherModel extends BaseModel
     {
         $this->InsertDataInto($data, 'voucher');
     }
+   
 
     public function deleteVoucher($id)
     {

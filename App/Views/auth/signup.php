@@ -39,8 +39,8 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="terms-conditions" name="terms">
                             <label class="form-check-label" for="terms-conditions">
-                                I agree to
-                                <a href="javascript:void(0);">privacy policy &amp; terms</a>
+                                Tôi đồng ý
+                                <a href="javascript:void(0);">điều khoản &amp; chính sách.</a>
                             </label>
                         </div>
                     </div>
@@ -50,9 +50,9 @@
                 </form>
 
                 <p class="text-center">
-                    <span>Already have an account?</span>
-                    <a href="auth-login-basic.html">
-                        <span>Sign in instead</span>
+                    <span>Bạn đã có tài khoản?</span>
+                    <a href="<?php echo _WEB ?>/auth/signin">
+                        <span>Đăng nhập</span>
                     </a>
                 </p>
             </div>

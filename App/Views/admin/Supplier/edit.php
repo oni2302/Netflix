@@ -1,4 +1,4 @@
-<form action="<?php echo _WEB . "/admin/supplier/EditSupplier".$id ?>" method="post">
+<form action="<?php echo _WEB . "/admin/supplier/EditSupplier/".$id ?>" method="post">
     <div class="row">
         <div class="col-4">
             <div>

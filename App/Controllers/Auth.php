@@ -25,7 +25,9 @@ class Auth extends BaseController
             SessionManager::SetSession(SessionManager::USER_ROLE, $role);
             if ($role == "khachhang") {
                 header('location:' . _WEB);
-            } else {
+            } if($role == "doitacquangcao") {
+                header('location:' . _WEB . '/ads/Advertisement/index');
+            }else{
                 header('location:' . _WEB . '/admin/video/index');
             }
         }
@@ -45,6 +47,7 @@ class Auth extends BaseController
         $data = $request->getField();
         if ($data['pass'] == $data['repass']) {
             unset($data['repass']);
+            $data['role']=2;
             if ($this->model->createAccount($data)) {
                 header('location:' . _WEB . '/auth/signin');
             } else {
