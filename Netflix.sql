@@ -1082,6 +1082,20 @@ INSERT INTO `voucher` (`id`, `name`, `code`, `discount`, `remaining`, `startDate
 (23, '123', NULL, 123, 123, '2023-10-19 00:00:00', '2023-10-18 00:00:00', NULL, '2023-10-18 00:00:00'),
 (24, '123', NULL, 123, 123, '2023-10-19 00:00:00', '2023-10-18 00:00:00', NULL, '2023-10-18 00:00:00');
 
+---- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `purchasehistory`
+--
+
+CREATE TABLE `purchasehistory` (
+  `id` int(11) NOT NULL,
+  `idUser` int(11) NOT NULL,
+  `serviceName` varchar(200) NOT NULL,
+  `purchaseDate` datetime NOT NULL,
+  `price` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Chỉ mục cho các bảng đã đổ
 --
@@ -1202,6 +1216,13 @@ ALTER TABLE `voucher`
   ADD KEY `specificFor` (`specificFor`);
 
 --
+-- Chỉ mục cho bảng `purchasehistory`
+--
+ALTER TABLE `purchasehistory`
+  ADD PRIMARY KEY (`id`);
+
+--
+
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -1290,6 +1311,12 @@ ALTER TABLE `voucher`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
+-- AUTO_INCREMENT cho bảng `purchasehistory`
+--
+ALTER TABLE `purchasehistory`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+  --
 -- Các ràng buộc cho các bảng đã đổ
 --
 
