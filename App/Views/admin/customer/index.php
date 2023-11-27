@@ -3,7 +3,7 @@ if (empty($customer_list)) {
     $customer_list = [];
 }
 ?>
-<a class="mb-3 btn btn-primary" href="<?php echo _WEB ?>/customer/ViewAdd">Thêm Khách Hàng</a>
+<a class="mb-3 btn btn-primary" href="<?php echo _WEB ?>/admin/customer/ViewAdd">Thêm Khách Hàng</a>
 <div class="card px-4 pb-4">
     <h5 class="card-header">Danh sách Khách Hàng</h5>
     <div class="table-responsive text-nowrap">
@@ -36,7 +36,7 @@ if (empty($customer_list)) {
                         <td><?php echo $value['currentService']; ?> </td>
                         <td>
                             <a class="btn" href="<?php echo _WEB ?>/customer/deletecustomer/<?php echo $value['id'] ?>">Delete</a>
-                            <a class="btn" href="<?php echo _WEB ?>/customer/xulieditcustomer/<?php echo $value['id'] ?>">Edit</a>
+                            <a class="btn" href="<?php echo _WEB ?>/admin/customer/xulieditcustomer/<?php echo $value['id'] ?>">Edit</a>
                         </td>
                     </tr>
                 <?php } ?>
