@@ -1,5 +1,5 @@
 <?php
-class manageInforModel extends BaseModel
+class historyModel extends BaseModel
 {
     function tableFill()
     {
@@ -14,13 +14,9 @@ class manageInforModel extends BaseModel
     {
         parent::__construct();
     }
-    public function editInfo($data){
+    public function getHistory(){
         $id = SessionManager::GetSession(SessionManager::USER_ACCOUNT)['id'];
-        $this->UpdateTableDataById('useraccount', $data, $id);
-    }
-    public function getInfor(){
-        $id = SessionManager::GetSession(SessionManager::USER_ACCOUNT)['id'];
-        $sql = "SELECT * from useraccount where id='$id'";
+        $sql = "SELECT * from purchasehistory where idUser= '$id'";
         return $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
     

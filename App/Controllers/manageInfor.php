@@ -12,11 +12,11 @@
             $this->renderView('layouts/customer',$this->data);
         }
         //Chỉnh sửa thông tin cá nhân
-        public function edit($id){
+        public function edit(){
             $request = new Request();
             $data = $request->getField();
-            $this->model->editInfo($id,$data); 
-            header('location:'._WEB. "/user/manage/index");
+            $this->model->editInfo($data); 
+            header('location:'._WEB. "/manageInfor/index");
         }
         //Hiển Thị view edit
         public function viewEdit($id=''){
