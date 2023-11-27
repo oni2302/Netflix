@@ -14,7 +14,8 @@ class manageInforModel extends BaseModel
     {
         parent::__construct();
     }
-    public function editInfo($id,$data){
+    public function editInfo($data){
+        $id = SessionManager::GetSession(SessionManager::USER_ACCOUNT)['id'];
         $this->UpdateTableDataById('useraccount', $data, $id);
     }
     public function getInfor(){

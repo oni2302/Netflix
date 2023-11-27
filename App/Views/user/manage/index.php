@@ -4,7 +4,7 @@ if (empty($manageInfor)) {
 }
 ?>
 <div class="row">
-    <form action="<?php echo _WEB . "/manageInfor/edit/" . $id ?>" method="post">
+    <form action="" method="post">
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h5 class="mb-0">Thông tin cá nhân</h5>

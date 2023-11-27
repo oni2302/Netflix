@@ -14,6 +14,7 @@
 
                             </div>
                         </div>
+                        
                     </div>
                 </div>
                 <div id="growthChart" style="min-height: 154.875px;"></div>
