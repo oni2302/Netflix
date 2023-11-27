@@ -34,6 +34,8 @@ class ServiceModel extends BaseModel{
     public function getResolution(){
         
     }
+ 
+     
     //Thêm gói dịch vụ
     public function addServicePackages($data)
     {
@@ -57,5 +59,23 @@ class ServiceModel extends BaseModel{
         $fieldEdit= rtrim($fieldEdit,',');
         $sql.=$fieldEdit." WHERE id=$id";
         $this->execute($sql);
+    }
+    // Lấy 3 gói dịch vụ rẻ nhất đê view cho khách hàng 
+    public function getCheapestServicePackages() {
+        $sql = "SELECT * FROM service ORDER BY price ASC LIMIT 3";
+        $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
+        if (empty($result)) {
+            return false;
+        }
+        return $result;
+    }
+    // Hàm lấy 3 gói dịch vụ ngoài 3 gói rẻ nhất để gợi ý cho customer
+    public function getRemainingServicePackages() {
+        $sql = "SELECT * FROM service WHERE id NOT IN (SELECT id FROM (SELECT id FROM service ORDER BY price ASC LIMIT 3) AS subquery)";
+        $result = $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
+        if (empty($result)) {
+            return false;
+        }
+        return $result;
     }
 }
