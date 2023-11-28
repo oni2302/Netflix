@@ -22,4 +22,12 @@ class HomeModel extends BaseModel
         }
         return [];
     }
+    public function purchase($id){
+        SessionManager::SetSession('callbackUrl', _WEB . '/ads/Advertisement/purchased');
+        SessionManager::SetSession('purchaseFor', $id);
+        Payment::Purchase($id,$id , true);
+    }
+    public function purchased(){
+        
+    }
 }
