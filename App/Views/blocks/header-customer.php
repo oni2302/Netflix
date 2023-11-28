@@ -23,7 +23,7 @@
             </a>
         </li>
         <li class="menu-item">
-            <a href="index" class="menu-link">
+            <a href="<?php echo _WEB ?>/cus/customerservice/index/" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Gói dịch vụ</div>
             </a>
