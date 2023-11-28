@@ -4,6 +4,7 @@ if (empty($manageInfor)) {
 }
 ?>
 <div class="row">
+
     <form action="" method="post">
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center">
@@ -42,4 +43,9 @@ if (empty($manageInfor)) {
             <?php } ?>
         </div>
     </form>
+    <div style="display:flex; justify-content:space-evenly;">
+        <a class="mb-3 btn btn-primary" style="width:fit-content; position:relative; left:%;" href="<?php echo _WEB ?>/cus/serviceDetail/index">Xem thông tin gói hiện tại</a>
+        <a class="mb-3 btn btn-primary" style="width: fit-content; position:relative; left:%;" href="<?php echo _WEB ?>/cus/history/index">Xem lịch sử mua</a>
+    </div>
+
 </div>
