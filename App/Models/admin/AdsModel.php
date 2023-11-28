@@ -21,4 +21,5 @@ class AdsModel extends BaseModel
         $sql = "SELECT a.*,s.statusTitle FROM advertisement a JOIN adsstatus s ON a.statusAds = s.id";
         return $this->execute($sql)->fetchAll(PDO::FETCH_ASSOC);
     }
+
 }

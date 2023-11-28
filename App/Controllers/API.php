@@ -7,7 +7,8 @@ class API extends BaseController
     }
     public function getData()
     {
-        $contentData = $this->model->getRecommendFilm();
+        $id = (new Request())->getField()['id'];
+        $contentData = $this->model->getRecommendFilm($id);
         $contentData['color'] = '0xFF000000';
 
         // Trả về dữ liệu dưới dạng JSON
@@ -15,8 +16,8 @@ class API extends BaseController
         echo json_encode($contentData);
     }
     public function getAllMovie()
-    {
-        $data = $this->model->getAllFilm();
+    {   $id = (new Request())->getField()['id'];
+        $data = $this->model->getAllFilm($id);
         header("Access-Control-Allow-Origin: *");
         echo json_encode($data);
     }
@@ -73,7 +74,7 @@ class API extends BaseController
         $oldYear = null;
         foreach ($incomeByYear as $year => $income) {
             if ($oldIncome != 0) {
-                $percentage = ($income / $incomeByYear[$oldYear]) * 100 -100;
+                $percentage = ($income / $incomeByYear[$oldYear]) * 100 - 100;
                 $jsonData[$year] = round($percentage, 0);
             } else {
                 $jsonData[$year] = 0;
@@ -94,5 +95,36 @@ class API extends BaseController
         header('Access-Control-Allow-Origin: *');
         // Return the JSON result
         echo $jsonResult;
+    }
+    public function clientLogin()
+    {
+        $request = new Request();
+        $data = $request->getField();
+        $result = $this->model->validateLogin($data);
+        header("Access-Control-Allow-Origin: *");
+        if ($result != false) {
+            echo json_encode($result);
+        } else {
+            echo '{}';
+        }
+        
+    }
+    public function saveHistory(){
+        $data = (new Request())->getField();
+        $result=$this->model->saveHistory($data);
+        echo "{'result':'$result'}";
+
+        
+    }
+    public function getHistory(){
+        $id = (new Request())->getField()['user'];
+        $result =  $this->model->getHistory($id);
+        header('Access-Control-Allow-Origin: *');
+
+        echo json_encode($result);
+    }
+    public function changeSession(){
+        $data = (new Request())->getField();
+        $this->model->changeSession($data);
     }
 }
