@@ -7,7 +7,7 @@
         <div class="col-xxl-3 col-sm-5 p-3">
             <div class="card">
                 <a href="">
-                    <img class="card-img-top" src="<?php _WEB ?>/public/assets/images/brand/netflix-banner.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="<?php echo _WEB ?>/public/assets/images/brand/netflix-banner.jpg" width="200px" alt="Card image cap">
                 </a>
 
                 <div class="card-body">

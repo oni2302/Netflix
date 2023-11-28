@@ -10,10 +10,11 @@
                     <div class="text-center">
                         <div class="dropdown">
                             <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="growthReportId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="growthReportId" id="yearDropdown" style="">
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="growthReportId" id="yearDropdown">
 
                             </div>
                         </div>
+                        
                     </div>
                 </div>
                 <div id="growthChart" style="min-height: 154.875px;"></div>

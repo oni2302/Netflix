@@ -24,7 +24,7 @@ class Auth extends BaseController
             $role = $this->model->checkRole($account['role']);
             SessionManager::SetSession(SessionManager::USER_ROLE, $role);
             if ($role == "khachhang") {
-                header('location:' . _WEB);
+                header('location:' . _WEB . '/Home/index');
             } if($role == "doitacquangcao") {
                 header('location:' . _WEB . '/ads/Advertisement/index');
             }else{
