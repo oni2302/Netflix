@@ -27,6 +27,9 @@ if (empty($history)) {
         </table>
     </div>
 </div>
+<br>
+<a style="font-weight: bolder; color:dimgray; text-decoration:underline;" href="<?php echo _WEB ?>/manageInfor/index">Quay lại</a>
+
 <script>
     let table = new DataTable('#historyTable', {
         paging: true,
